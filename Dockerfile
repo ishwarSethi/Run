@@ -82,7 +82,7 @@ RUN apt-get update \
 # Set up the user
 RUN export UNAME=$UNAME UID=1000 GID=1000 && \
     mkdir -p "/home/${UNAME}" && \
-    echo "${UNAME}:x:${UID}:${GID}:${UNAME} User,,,:/home/${UNAME}:/bin/sudo" >> /etc/passwd && \
+    echo "${UNAME}:x:${UID}:${GID}:${UNAME} User,,,:/home/${UNAME}:/bin/bash" >> /etc/passwd && \
     echo "${UNAME}:x:${UID}:" >> /etc/group && \
     mkdir -p /etc/sudoers.d && \
     echo "${UNAME} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${UNAME} && \

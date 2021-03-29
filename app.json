@@ -1,0 +1,10 @@
+{
+  "name": "project name",
+  "description": "project name",
+  "keywords": ["VNC", "Docker"],
+  "env": {
+  },
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }

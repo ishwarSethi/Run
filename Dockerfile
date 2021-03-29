@@ -51,12 +51,6 @@ RUN set -ex; \
     && rm -rf /var/lib/apt/lists/*
 
 
-RUN chmod +x ngrok
-
-RUN ./ngrok authtoken 1fxlJLGSSJKPhoc0OrZ5c0AuUfZ_6Y386gD7Z5bjBGcuJfktp
-
-
-
 
 
 

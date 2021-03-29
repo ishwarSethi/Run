@@ -50,8 +50,8 @@ RUN set -ex; \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 
-RUN unzip ngrok-stable-linux-amd64.zip
 
+RUN chmod +x ngrok
 
 RUN ./ngrok authtoken 1fxlJLGSSJKPhoc0OrZ5c0AuUfZ_6Y386gD7Z5bjBGcuJfktp
 
